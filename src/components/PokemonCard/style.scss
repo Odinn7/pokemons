@@ -1,0 +1,260 @@
+.pokemonCard {
+  margin: 10px 15px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px 25px;
+    background: #02395d;
+    color: #FFFFFF;
+
+    &:hover {
+      background: lighten(#02395d, 8);
+      transition: .5s;
+    }
+  }
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  transform: (-50%, -50%);
+  top: 25%;
+  left: 33%;
+  border: 3px solid #ffff14;
+  width: 35vw;
+  height: 35vh;
+  padding: 10px 25px;
+  background: #9aaaf5;
+  color: black;
+  border-radius: 15px;
+
+  &__nameIcon {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__iconWrapper {
+      &-icon {
+        width: 250px;
+      }
+    }
+  }
+
+  &__movesStats {
+    display: flex;
+    border-left: 1px solid #ffff14;
+    height: 100%;
+
+    &__moves {
+      &-move {
+        list-style: none;
+        font-size: 1.2rem;
+      }
+    }
+
+    &__stats {
+      &-stat {
+        list-style: none;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .pokemonCard {
+
+    &__info {
+      width: 2vw;
+      height: 3.5vh;
+      font-size: .4rem;
+
+      &:hover {
+        background: lighten(#02395d, 8);
+        transition: .5s;
+      }
+    }
+  }
+
+  .cardInfo {
+    transform: (-50%, -50%);
+    top: 30%;
+    left: 13%;
+    width: 250px;
+    height: 170px;
+
+    &__nameIcon {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &__nameWrapper {
+        &-name {
+          font-size: 1rem;
+        }
+      }
+
+      &__iconWrapper {
+        &-icon {
+          width: 120px;
+        }
+      }
+    }
+
+    &__movesStats {
+      display: flex;
+      border-left: 1px solid #ffff14;
+      height: 100%;
+
+      &__moves {
+        &-move {
+          list-style: none;
+          font-size: .5rem;
+        }
+      }
+
+      &__stats {
+        &-stat {
+          list-style: none;
+          font-size: .5rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .pokemonCard {
+
+    &__info {
+      width: 2vw;
+      height: 3.5vh;
+      font-size: .4rem;
+
+      &:hover {
+        background: lighten(#02395d, 8);
+        transition: .5s;
+      }
+    }
+  }
+
+  .cardInfo {
+    transform: (-50%, -50%);
+    top: 30%;
+    left: 13%;
+    width: 250px;
+    height: 170px;
+
+    &__nameIcon {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &__nameWrapper {
+        &-name {
+          font-size: 1rem;
+        }
+      }
+
+      &__iconWrapper {
+        &-icon {
+          width: 120px;
+        }
+      }
+    }
+
+    &__movesStats {
+      display: flex;
+      border-left: 1px solid #ffff14;
+      height: 100%;
+
+      &__moves {
+        &-move {
+          list-style: none;
+          font-size: .5rem;
+        }
+      }
+
+      &__stats {
+        &-stat {
+          list-style: none;
+          font-size: .5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .pokemonCard {
+
+    &__info {
+      //width: 2vw;
+      //height: 3.5vh;
+      font-size: 1rem;
+
+      &:hover {
+        background: lighten(#02395d, 8);
+        transition: .5s;
+      }
+    }
+  }
+
+  .cardInfo {
+    transform: (-50%, -50%);
+    top: 30%;
+    left: 45%;
+    width: 400px;
+    height: 370px;
+
+    &__nameIcon {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &__nameWrapper {
+        &-name {
+          font-size: 2rem;
+        }
+      }
+
+      &__iconWrapper {
+        &-icon {
+          width: 180px;
+        }
+      }
+    }
+
+    &__movesStats {
+      display: flex;
+      border-left: 1px solid #ffff14;
+      height: 100%;
+
+      &__moves {
+        &-move {
+          list-style: none;
+          font-size: .9rem;
+        }
+      }
+
+      &__stats {
+        &-stat {
+          list-style: none;
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
